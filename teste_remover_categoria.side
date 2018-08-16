@@ -1,0 +1,290 @@
+{
+  "id": "0eb04ea7-a331-4e8a-ab69-923976398133",
+  "name": "Untitled Project",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "b011b3c7-9b3e-4afc-833f-545d38f370f6",
+    "name": "teste_login_adm",
+    "commands": [{
+      "id": "fcb25dc7-f043-490d-b7c4-54748e3a9e07",
+      "comment": "",
+      "command": "open",
+      "target": "/VOX4T/admin",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e90b128-4dba-48fe-a87f-9ca246abcf2b",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='formLoginAdmin']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "82,18"
+    }, {
+      "id": "2e783fa6-5257-434d-b6a2-a7bd74bbbc67",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='formLoginAdmin']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "adm@vox4t.com"
+    }, {
+      "id": "75f122e5-2009-4940-a3d9-5cba0e5bb8d5",
+      "comment": "",
+      "command": "type",
+      "target": "id=senha",
+      "targets": [
+        ["id=senha", "id"],
+        ["name=senha", "name"],
+        ["css=#senha", "css"],
+        ["xpath=//input[@id='senha']", "xpath:attributes"],
+        ["xpath=//form[@id='formLoginAdmin']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "9739aa41-2f6c-4220-8cf1-85bf8e03e248",
+      "comment": "",
+      "command": "clickAt",
+      "target": "xpath=//button[@type='submit']",
+      "targets": [
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formLoginAdmin']/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": "122,30"
+    }, {
+      "id": "77d6a87b-3c86-42d5-815c-3848040c3fc4",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": "547,322"
+    }]
+  }, {
+    "id": "81b1ef14-af38-4794-a9e6-d46fcf53a429",
+    "name": "teste_logout_adm",
+    "commands": [{
+      "id": "9bd12fcd-433e-4737-8df9-726bc5bf66c6",
+      "comment": "",
+      "command": "open",
+      "target": "/VOX4T/admin/menu",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7de74dd2-a225-4098-b9fb-fc0b7856522c",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Sair",
+      "targets": [
+        ["linkText=Sair", "linkText"],
+        ["css=#navbarSupportedContent > #logoff", "css"],
+        ["xpath=//a[contains(text(),'Sair')]", "xpath:link"],
+        ["xpath=(//a[@id='logoff'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/VOX4T/logout')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"]
+      ],
+      "value": "20,21"
+    }]
+  }, {
+    "id": "8c46374e-870d-4d60-97ed-61e002df7fb8",
+    "name": "teste_cadastro_categoria",
+    "commands": [{
+      "id": "daec3690-1c16-4d10-a4bb-3a175306d65b",
+      "comment": "",
+      "command": "open",
+      "target": "/VOX4T/admin/menu",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "143a8ba4-be5d-4be7-a10e-05719bb1c78d",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=categoria",
+      "targets": [
+        ["id=categoria", "id"],
+        ["linkText=Categoria", "linkText"],
+        ["css=#categoria", "css"],
+        ["xpath=//a[contains(text(),'Categoria')]", "xpath:link"],
+        ["xpath=//a[@id='categoria']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/VOX4T/categoria/add')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": "43,23"
+    }, {
+      "id": "3443afbe-7a6a-4bdf-82ca-b014cb6f2ad4",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "44,12"
+    }, {
+      "id": "1dafc357-5464-41f3-8738-a8f485edd66d",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Noticias"
+    }, {
+      "id": "564eeba8-ca41-4545-95fd-63b0ae94209c",
+      "comment": "",
+      "command": "clickAt",
+      "target": "xpath=//button[@type='submit']",
+      "targets": [
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": "63,14"
+    }]
+  }, {
+    "id": "1af6f635-f6f8-4748-8661-568fc1e6ea45",
+    "name": "teste_remover_categoria",
+    "commands": [{
+      "id": "53cb76a8-ed1b-44e8-958b-9b50f9331113",
+      "comment": "",
+      "command": "open",
+      "target": "/VOX4T/categoria/add",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6172914f-648e-4eca-85f2-2989cfcbf45f",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=categoria",
+      "targets": [
+        ["id=categoria", "id"],
+        ["linkText=Categoria", "linkText"],
+        ["css=#categoria", "css"],
+        ["xpath=//a[contains(text(),'Categoria')]", "xpath:link"],
+        ["xpath=//a[@id='categoria']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/VOX4T/categoria/add')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": "45,29"
+    }, {
+      "id": "fdbba0f1-116f-40ba-afba-fb183d2e0dd9",
+      "comment": "",
+      "command": "clickAt",
+      "target": "xpath=//table[@id='tabelaListaCategoria']/tbody/tr[2]/td[2]/a[2]/i",
+      "targets": [
+        ["xpath=//table[@id='tabelaListaCategoria']/tbody/tr[2]/td[2]/a[2]/i", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/a[2]/i", "xpath:position"]
+      ],
+      "value": "7,8"
+    }]
+  }, {
+    "id": "7cc2b131-0a8f-494c-8fb1-3f957a8c4171",
+    "name": "teste_alterar_categoria",
+    "commands": [{
+      "id": "855bde0f-4220-4b3c-9b4e-9c5fd8b9e6e1",
+      "comment": "",
+      "command": "open",
+      "target": "/VOX4T/categoria/add",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a5b4e09-89d4-484b-a05d-56e9f074cefc",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=categoria",
+      "targets": [
+        ["id=categoria", "id"],
+        ["linkText=Categoria", "linkText"],
+        ["css=#categoria", "css"],
+        ["xpath=//a[contains(text(),'Categoria')]", "xpath:link"],
+        ["xpath=//a[@id='categoria']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/VOX4T/categoria/add')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": "84,33"
+    }, {
+      "id": "a94fbfb7-7683-4316-9f08-0ff97ed57682",
+      "comment": "",
+      "command": "clickAt",
+      "target": "xpath=//table[@id='tabelaListaCategoria']/tbody/tr[2]/td[2]/a/i",
+      "targets": [
+        ["xpath=//table[@id='tabelaListaCategoria']/tbody/tr[2]/td[2]/a/i", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/a/i", "xpath:position"]
+      ],
+      "value": "0,10"
+    }, {
+      "id": "e4abae8a-c3ff-4651-8206-5441493e380c",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=div.form-group > #nome",
+      "targets": [
+        ["css=div.form-group > #nome", "css"],
+        ["xpath=(//input[@id='nome'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='myModal']/div/form/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "-26,10"
+    }, {
+      "id": "49d682e9-fff3-41d1-953f-9651cd583ad6",
+      "comment": "",
+      "command": "type",
+      "target": "css=div.form-group > #nome",
+      "targets": [
+        ["css=div.form-group > #nome", "css"],
+        ["xpath=(//input[@id='nome'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='myModal']/div/form/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "News"
+    }, {
+      "id": "171388df-7e51-48a8-9276-314bdbd4bb4c",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=div.modal-footer > button.btn.btn-success",
+      "targets": [
+        ["css=div.modal-footer > button.btn.btn-success", "css"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='myModal']/div/form/div/form/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": "28,23"
+    }]
+  }],
+  "suites": [{
+    "id": "8b174471-c207-44e0-a767-6f62e96375d4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b011b3c7-9b3e-4afc-833f-545d38f370f6"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": [],
+  "version": "1.0"
+}
